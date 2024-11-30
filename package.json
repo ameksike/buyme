@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ksmf": "^1.4.2",
+    "ksmf-express": "^1.2.3",
+    "ksmf-sequelize": "^1.2.2"
+  }
 }
