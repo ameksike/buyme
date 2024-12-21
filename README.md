@@ -2,7 +2,7 @@
 E-Comerce App
 
 
-## References
+## Technologies
 - GUI
     - [Preactjs](https://preactjs.com/)
     - [Remix](https://remix.run/)
@@ -21,12 +21,6 @@ E-Comerce App
         - Free Plan (Self-hosted)
         - Developer Plan (Cloud)
             - $29 per project / month
-        - Docs 
-            - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
-            ```shell
-            npm i strapi
-            npm i @strapi/blocks-react-renderer
-            ```
     - [Contentful](https://www.contentful.com/pricing/)
         - Free Plan
             - 10 users
@@ -64,7 +58,6 @@ E-Comerce App
             - Custom instructions
 - CIAM
     - [Next Auth](https://next-auth.js.org/)
-        - [Next Auth V5 - Advanced Guide (2024)](https://www.youtube.com/watch?v=1MTyCvS05V4)
     - [AWS Cognito](https://aws.amazon.com/es/cognito/pricing/?p=pm&c=cog&z=4)
         - Free Plan 
             - free tier pricing isn’t available in the AWS GovCloud (US-West) region.
@@ -136,3 +129,14 @@ E-Comerce App
             - $19 USD per user/month
 
     - [Railway](https://railway.com/pricing)
+
+
+## References
+- Strapi
+    - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
+    ```shell
+    npm i strapi
+    npm i @strapi/blocks-react-renderer
+    ```
+- Next Auth
+    - [Next Auth V5 - Advanced Guide (2024)](https://www.youtube.com/watch?v=1MTyCvS05V4)
