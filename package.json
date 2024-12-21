@@ -4,7 +4,10 @@
   "description": "E-Comerce App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "iac:check": "terraform plan",
+    "iac:up": "terraform apply",
+    "iac:down": "terraform destroy"
   },
   "keywords": [],
   "author": "",

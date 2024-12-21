@@ -1,6 +1,12 @@
 # Buyme
 E-Comerce App
 
+## Install 
+- terraform -version
+- terraform init
+- terraform plan
+- terraform apply
+- terraform destroy
 
 ## Technologies
 - GUI
@@ -164,11 +170,28 @@ E-Comerce App
             - $20/month   
     - [Railway](https://railway.com/pricing)
 
+- Performance
+    - [GTmetrix](https://gtmetrix.com/)
+
+- IaC
+    - [Terraform](https://app.terraform.io/app/Ksike/workspaces)
+        - [Training](https://www.youtube.com/watch?v=_84CxYRv9Ik)
+        - [Install](https://developer.hashicorp.com/terraform/install)
+        - [Cloudflare R2](https://developers.cloudflare.com/r2/examples/terraform/) 
+        - [Render](https://github.com/render-oss/terraform-provider-render)
+        - [Providers Registry](https://registry.terraform.io/?product_intent=terraform)
+            - [Cloudflare](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs)
+            - [Render](https://registry.terraform.io/providers/render-oss/render/latest/docs/resources/web_service)
 
 ## References
 - [Build Your Own X (insert technology here)](https://build-your-own-x.vercel.app/)
 - Strapi
     - [Getting Started With Next JS 14 and Strapi](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgONvIWsy34aDkAtcdjsQLE)
+    - [Strapi & Gatsby Tutorial](https://www.youtube.com/playlist?list=PLVoKTq3-H4pjUy7hfCB0Ei1QBSnevxfhI)
+        - [Strapi Gatsby Tutorial #5 - Installing Cloudinary Plugin for Strapi](https://www.youtube.com/watch?v=L15BAmxbbM4&list=PLVoKTq3-H4pjUy7hfCB0Ei1QBSnevxfhI&index=5)
+        - [Strapi Gatsby Tutorial #6 - Deploying Strapi to Render](https://www.youtube.com/watch?v=lBQxrvLFnII)
+        - [Strapi Gatsby Tutorial #7 - Migrating to Neon Postgres Database](https://www.youtube.com/watch?v=duMr6MTViUY)
+        - [How to Build a Static Blog with Gatsby and Strapi](https://strapi.io/blog/how-to-build-a-static-blog-with-gatsby-and-strapi)
     - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
     ```shell
     npm i strapi

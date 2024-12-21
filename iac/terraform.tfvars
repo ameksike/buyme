@@ -1,0 +1,8 @@
+render_api_key=""
+database_url=""
+r2_bucket_name=""
+r2_access_key_id=""
+r2_secret_access_key=""
+cloudflare_api_token=""
+cloudflare_account_id=""
+cms_repo="https://github.com/ameksike/buyme-cms"
