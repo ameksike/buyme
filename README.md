@@ -116,6 +116,13 @@ E-Comerce App
             - Class B operations: read existing state: 10,000,000 / month
         - Pro Plan 
             - $0.015 / GB storage
+    
+    - [Cloudinary](https://cloudinary.com/pricing)
+        - Free Plan 
+            - 3 Users / 1 Account
+            - 25 monthly credits 
+        - Plus Plan 
+            - $89 Per month
 
 - Cloud
     - [Vercel](https://vercel.com/docs/accounts/plans/hobby)
@@ -149,6 +156,7 @@ E-Comerce App
 
 
 ## References
+- [Build Your Own X (insert technology here)](https://build-your-own-x.vercel.app/)
 - Strapi
     - [Getting Started With Next JS 14 and Strapi](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgONvIWsy34aDkAtcdjsQLE)
     - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
