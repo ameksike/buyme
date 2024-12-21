@@ -151,7 +151,17 @@ E-Comerce App
 
         - Professional 
             - $19 USD per user/month
-
+    - [Cloudflare JAMstack](https://www.cloudflare.com/plans/developer-platform/)
+        - Free Plan 
+            - 1 build at a time
+            - 500 builds per month
+            - Integrated web analytics
+            - Unlimited free admin seats
+            - Unlimited sites
+            - Unlimited requests
+            - Unlimited bandwidth
+        - Pro Plan
+            - $20/month   
     - [Railway](https://railway.com/pricing)
 
 
