@@ -8,6 +8,7 @@ E-Comerce App
     - [Remix](https://remix.run/)
     - [Nextjs](https://nextjs.org/)
     - [Nextui](https://nextui.org/)
+    - [Shadcn](https://ui.shadcn.com/)
     - [Tailwind](https://tailwindcss.com/)
 - ORM
     - [Drizzle](https://orm.drizzle.team/)
@@ -99,6 +100,22 @@ E-Comerce App
             - Community support
         - Pro Plan 
             - $25 / month
+- File Storage
+    - [AWS S3](https://aws.amazon.com/pm/serv-s3/?nc1=h_ls)
+        - Standard Plan
+            - PUT, COPY, POST, LIST requests (per 1,000 requests): $0.005
+            - GET, SELECT, and all other requests (per 1,000 requests): $0.0004	
+            - First 50 TB / Month	$0.023 per GB
+            - Next 450 TB / Month	$0.022 per GB
+            - Over 500 TB / Month	$0.021 per GB
+
+    - [Cloudflare R2](https://www.cloudflare.com/developer-platform/products/r2/)
+        - Free Plan 
+            - Storage: 10 GB / month
+            - Class A operations: mutate state: 1,000,000 / month
+            - Class B operations: read existing state: 10,000,000 / month
+        - Pro Plan 
+            - $0.015 / GB storage
 
 - Cloud
     - [Vercel](https://vercel.com/docs/accounts/plans/hobby)
@@ -133,6 +150,7 @@ E-Comerce App
 
 ## References
 - Strapi
+    - [Getting Started With Next JS 14 and Strapi](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgONvIWsy34aDkAtcdjsQLE)
     - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
     ```shell
     npm i strapi
