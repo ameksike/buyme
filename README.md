@@ -192,10 +192,18 @@ E-Comerce App
         - [Strapi Gatsby Tutorial #6 - Deploying Strapi to Render](https://www.youtube.com/watch?v=lBQxrvLFnII)
         - [Strapi Gatsby Tutorial #7 - Migrating to Neon Postgres Database](https://www.youtube.com/watch?v=duMr6MTViUY)
         - [How to Build a Static Blog with Gatsby and Strapi](https://strapi.io/blog/how-to-build-a-static-blog-with-gatsby-and-strapi)
+    - [Using Strapi With Supabase Deployed To Render](https://www.youtube.com/watch?v=vndfVnRPcgk)
     - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
+    - [Crea un Ecommerce desde Cero: Guía Completa con NextJS, React, Tailwind, Shadcn, Strapi y Stripe 🚀](https://www.youtube.com/watch?v=TToPJy1kTAw)
     ```shell
     npm i strapi
     npm i @strapi/blocks-react-renderer
     ```
 - Next Auth
     - [Next Auth V5 - Advanced Guide (2024)](https://www.youtube.com/watch?v=1MTyCvS05V4)
+    - [Midudev Projects](https://github.com/midudev/aprendiendo-react/tree/master/projects)
+    - [Create Login and Registration Form in Reactjs and Strapi Step By Step for Beginners](https://www.youtube.com/watch?v=rqVGovgDLc4&list=PLWfXLyKWUGIK8Vh8sVwJol_bDDvRj7tNW)
+- CloudFlare 
+    - [Upload Files To CloudFlare R2 using Nextjs](https://www.youtube.com/watch?v=t8b3si507pg)
+- Frontend
+    - [Let's build a web app with AI in 191 min (Cursor AI, VS Code, ChatGPT, Firebase)](https://www.youtube.com/watch?v=-tnPCI5RdNA)

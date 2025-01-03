@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "iac:check": "terraform plan",
-    "iac:up": "terraform apply",
-    "iac:down": "terraform destroy"
+    
+    "iac:load": "cd iac & terraform init",
+    "iac:check": "cd iac & terraform plan",
+    "iac:up": "cd iac & terraform apply",
+    "iac:down": "cd iac & terraform destroy",
+    "iac:output": "cd iac & terraform output"
   },
   "keywords": [],
   "author": "",
