@@ -207,3 +207,7 @@ E-Comerce App
     - [Upload Files To CloudFlare R2 using Nextjs](https://www.youtube.com/watch?v=t8b3si507pg)
 - Frontend
     - [Let's build a web app with AI in 191 min (Cursor AI, VS Code, ChatGPT, Firebase)](https://www.youtube.com/watch?v=-tnPCI5RdNA)
+
+- AI 
+    - [Replit](https://replit.com/pricing)
+    - [Vercel: V0](https://v0.dev/)
