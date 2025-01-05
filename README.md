@@ -1,6 +1,17 @@
 # Buyme
 E-Comerce App
 
+## Install 
+- terraform
+    - terraform -version
+    - terraform init
+    - terraform plan
+    - terraform apply
+    - terraform destroy
+- next.js
+    - npx create-next-app@latest frontend
+- Shadcn UI
+    - npx shadcn@latest init -d
 
 ## Technologies
 - GUI
@@ -116,6 +127,13 @@ E-Comerce App
             - Class B operations: read existing state: 10,000,000 / month
         - Pro Plan 
             - $0.015 / GB storage
+    
+    - [Cloudinary](https://cloudinary.com/pricing)
+        - Free Plan 
+            - 3 Users / 1 Account
+            - 25 monthly credits 
+        - Plus Plan 
+            - $89 Per month
 
 - Cloud
     - [Vercel](https://vercel.com/docs/accounts/plans/hobby)
@@ -144,17 +162,59 @@ E-Comerce App
 
         - Professional 
             - $19 USD per user/month
-
+    - [Cloudflare JAMstack](https://www.cloudflare.com/plans/developer-platform/)
+        - Free Plan 
+            - 1 build at a time
+            - 500 builds per month
+            - Integrated web analytics
+            - Unlimited free admin seats
+            - Unlimited sites
+            - Unlimited requests
+            - Unlimited bandwidth
+        - Pro Plan
+            - $20/month   
     - [Railway](https://railway.com/pricing)
 
+- Performance
+    - [GTmetrix](https://gtmetrix.com/)
+
+- IaC
+    - [Terraform](https://app.terraform.io/app/Ksike/workspaces)
+        - [Training](https://www.youtube.com/watch?v=_84CxYRv9Ik)
+        - [Install](https://developer.hashicorp.com/terraform/install)
+        - [Cloudflare R2](https://developers.cloudflare.com/r2/examples/terraform/) 
+        - [Render](https://github.com/render-oss/terraform-provider-render)
+        - [Providers Registry](https://registry.terraform.io/?product_intent=terraform)
+            - [Cloudflare](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs)
+            - [Render](https://registry.terraform.io/providers/render-oss/render/latest/docs/resources/web_service)
 
 ## References
+- [Build Your Own X (insert technology here)](https://build-your-own-x.vercel.app/)
 - Strapi
     - [Getting Started With Next JS 14 and Strapi](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgONvIWsy34aDkAtcdjsQLE)
+    - [Strapi & Gatsby Tutorial](https://www.youtube.com/playlist?list=PLVoKTq3-H4pjUy7hfCB0Ei1QBSnevxfhI)
+        - [Strapi Gatsby Tutorial #5 - Installing Cloudinary Plugin for Strapi](https://www.youtube.com/watch?v=L15BAmxbbM4&list=PLVoKTq3-H4pjUy7hfCB0Ei1QBSnevxfhI&index=5)
+        - [Strapi Gatsby Tutorial #6 - Deploying Strapi to Render](https://www.youtube.com/watch?v=lBQxrvLFnII)
+        - [Strapi Gatsby Tutorial #7 - Migrating to Neon Postgres Database](https://www.youtube.com/watch?v=duMr6MTViUY)
+        - [How to Build a Static Blog with Gatsby and Strapi](https://strapi.io/blog/how-to-build-a-static-blog-with-gatsby-and-strapi)
+    - [Using Strapi With Supabase Deployed To Render](https://www.youtube.com/watch?v=vndfVnRPcgk)
     - [Curso de Strapi 5 para Principiantes: Crea una Tienda Online con Next.js 15 y TypeScript](https://www.youtube.com/watch?v=ldGrKPrFuYI)
+    - [Crea un Ecommerce desde Cero: Guía Completa con NextJS, React, Tailwind, Shadcn, Strapi y Stripe 🚀](https://www.youtube.com/watch?v=TToPJy1kTAw)
     ```shell
     npm i strapi
     npm i @strapi/blocks-react-renderer
     ```
 - Next Auth
     - [Next Auth V5 - Advanced Guide (2024)](https://www.youtube.com/watch?v=1MTyCvS05V4)
+    - [Midudev Projects](https://github.com/midudev/aprendiendo-react/tree/master/projects)
+    - [Create Login and Registration Form in Reactjs and Strapi Step By Step for Beginners](https://www.youtube.com/watch?v=rqVGovgDLc4&list=PLWfXLyKWUGIK8Vh8sVwJol_bDDvRj7tNW)
+- CloudFlare 
+    - [Upload Files To CloudFlare R2 using Nextjs](https://www.youtube.com/watch?v=t8b3si507pg)
+- Frontend
+    - [Let's build a web app with AI in 191 min (Cursor AI, VS Code, ChatGPT, Firebase)](https://www.youtube.com/watch?v=-tnPCI5RdNA)
+    - [Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App](https://www.youtube.com/watch?v=Zq5fmkH0T78)
+    - [Shadcn/UI: Next.js 15 + React 19](https://ui.shadcn.com/docs/react-19)
+
+- AI 
+    - [Replit](https://replit.com/pricing)
+    - [Vercel: V0](https://v0.dev/)
