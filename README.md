@@ -2,11 +2,14 @@
 E-Comerce App
 
 ## Install 
-- terraform -version
-- terraform init
-- terraform plan
-- terraform apply
-- terraform destroy
+- terraform
+    - terraform -version
+    - terraform init
+    - terraform plan
+    - terraform apply
+    - terraform destroy
+- next.js
+    - npx create-next-app@latest frontend
 
 ## Technologies
 - GUI
