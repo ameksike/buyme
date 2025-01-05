@@ -10,6 +10,8 @@ E-Comerce App
     - terraform destroy
 - next.js
     - npx create-next-app@latest frontend
+- Shadcn UI
+    - npx shadcn@latest init -d
 
 ## Technologies
 - GUI
@@ -210,6 +212,8 @@ E-Comerce App
     - [Upload Files To CloudFlare R2 using Nextjs](https://www.youtube.com/watch?v=t8b3si507pg)
 - Frontend
     - [Let's build a web app with AI in 191 min (Cursor AI, VS Code, ChatGPT, Firebase)](https://www.youtube.com/watch?v=-tnPCI5RdNA)
+    - [Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App](https://www.youtube.com/watch?v=Zq5fmkH0T78)
+    - [Shadcn/UI: Next.js 15 + React 19](https://ui.shadcn.com/docs/react-19)
 
 - AI 
     - [Replit](https://replit.com/pricing)
