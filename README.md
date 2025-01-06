@@ -11,6 +11,8 @@ E-Comerce App
 - next.js
     - npx create-next-app@latest frontend
 - Shadcn UI
+    - npm i tailwindcss-animate
+    - npm i @tailwindcss/typography
     - npx shadcn@latest init -d
 - auth
     - npm install next-auth@beta
