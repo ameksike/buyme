@@ -12,6 +12,10 @@ E-Comerce App
     - npx create-next-app@latest frontend
 - Shadcn UI
     - npx shadcn@latest init -d
+- auth
+    - npm install next-auth@beta
+    - npx auth secret
+
 
 ## Technologies
 - GUI
@@ -208,6 +212,8 @@ E-Comerce App
     - [Next Auth V5 - Advanced Guide (2024)](https://www.youtube.com/watch?v=1MTyCvS05V4)
     - [Midudev Projects](https://github.com/midudev/aprendiendo-react/tree/master/projects)
     - [Create Login and Registration Form in Reactjs and Strapi Step By Step for Beginners](https://www.youtube.com/watch?v=rqVGovgDLc4&list=PLWfXLyKWUGIK8Vh8sVwJol_bDDvRj7tNW)
+    - [Next-auth.js](https://next-auth.js.org/getting-started/example)
+    - [NextAuth.js is becoming Auth.js](https://authjs.dev/getting-started/installation)
 - CloudFlare 
     - [Upload Files To CloudFlare R2 using Nextjs](https://www.youtube.com/watch?v=t8b3si507pg)
 - Frontend
