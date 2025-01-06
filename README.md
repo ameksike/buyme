@@ -32,6 +32,7 @@ E-Comerce App
             ? Would you like to add the project ID and dataset to your .env.local file? Yes
             ```
         - npm install next-sanity@canary
+        - npm install --save sanity-plugin-markdown easymde@2
 
 ## Technologies
 - GUI
