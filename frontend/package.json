@@ -10,8 +10,8 @@
   },
   "packageManager": "npm@10.9.0",
   "overrides": {
-    "react":"$react",
-    "react-dom":"$react-dom"
+    "react": "$react",
+    "react-dom": "$react-dom"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
