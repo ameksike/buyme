@@ -1,11 +1,15 @@
-interface PageProps {
-    params: { id: string }
-}
+type PageProps = {
+    params: Promise<{
+        id: string;
+    }>;
+};
 
-export default function ({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
+    const { id } = await params;
+
     return (
         <div>
-            <h1>Users Details {params.id}</h1>
+            <h1>User ID: {id}</h1>
         </div>
-    )
+    );
 }
