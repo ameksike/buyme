@@ -17,12 +17,16 @@ export async function Navbar() {
                             <Link href="/startup/create">
                                 <span>Create</span>
                             </Link>
-                            <button onClick={async () => {
+
+                            <form action={async () => {
                                 "use server";
-                                signOut()
+                                await signOut({ redirectTo: "/" });
                             }}>
-                                <span>Logout</span>
-                            </button>
+                                <button type="submit">
+                                    <span>Logout</span>
+                                </button>
+                            </form>
+                            
                             <Link href={`/user/${session.user.id}`}>
                                 <span>{session.user.name}</span>
                             </Link>
