@@ -15,10 +15,23 @@ E-Comerce App
     - npm i @tailwindcss/typography
     - npx shadcn@latest init -d
     - npx shadcn@latest add button
+    - npx shadcn@latest add skeleton
+
 - auth
     - npm install next-auth@beta
     - npx auth secret
-
+- cms
+    - Sanity
+        - npm create sanity@latest -- --project d6hl73y8 --dataset production --template clean --typescript --output-path studio-buyme
+            ```shell
+            ? Would you like to add configuration files for a Sanity project in this Next.js folder? Yes
+            ? Do you want to use TypeScript? Yes
+            ? Would you like an embedded Sanity Studio? Yes
+            ? What route do you want to use for the Studio? /studio
+            ? Select project template to use Clean project with no predefined schema types
+            ? Would you like to add the project ID and dataset to your .env.local file? Yes
+            ```
+        - npm install next-sanity@canary
 
 ## Technologies
 - GUI
