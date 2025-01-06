@@ -14,6 +14,7 @@ E-Comerce App
     - npm i tailwindcss-animate
     - npm i @tailwindcss/typography
     - npx shadcn@latest init -d
+    - npx shadcn@latest add button
 - auth
     - npm install next-auth@beta
     - npx auth secret
