@@ -1,5 +1,63 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Install 
+- terraform
+    - terraform -version
+    - terraform init
+    - terraform plan
+    - terraform apply
+    - terraform destroy
+- next.js
+    - npx create-next-app@latest frontend
+- Shadcn UI
+    - npm i tailwindcss-animate
+    - npm i @tailwindcss/typography
+    - npx shadcn@latest init -d
+    - npx shadcn@latest add button
+    - npx shadcn@latest add skeleton
+
+- auth
+    - npm install next-auth@beta
+    - npx auth secret
+- cms
+    - Sanity
+        - npm create sanity@latest -- --project d6hl73y8 --dataset production --template clean --typescript --output-path studio-buyme
+            ```shell
+            ? Would you like to add configuration files for a Sanity project in this Next.js folder? Yes
+            ? Do you want to use TypeScript? Yes
+            ? Would you like an embedded Sanity Studio? Yes
+            ? What route do you want to use for the Studio? /studio
+            ? Select project template to use Clean project with no predefined schema types
+            ? Would you like to add the project ID and dataset to your .env.local file? Yes
+            ```
+        - npm install next-sanity@canary
+        - npm install --save sanity-plugin-markdown easymde@2
+        - GET [Structure](http://localhost:3000/studio/structure)
+        - GET [Vision](http://localhost:3000/studio/vision)
+            - Simple query
+                `*[_type == "startup"]`
+            - Complex query
+                ```js
+                *[_type == "startup" && defined(slug.current)]{
+                    _id, 
+                    _creatatedAt,
+                    title, 
+                    slug, 
+                    author -> {
+                        _id,
+                        name,
+                        slug,
+                        image, 
+                        dio
+                    },
+                    views,
+                    description,
+                    category,
+                    image
+                } 
+                ```
+
+
 ## Getting Started
 
 First, run the development server:

@@ -8,31 +8,8 @@ E-Comerce App
     - terraform plan
     - terraform apply
     - terraform destroy
-- next.js
-    - npx create-next-app@latest frontend
-- Shadcn UI
-    - npm i tailwindcss-animate
-    - npm i @tailwindcss/typography
-    - npx shadcn@latest init -d
-    - npx shadcn@latest add button
-    - npx shadcn@latest add skeleton
+- [frontend](./frontend/README.md)
 
-- auth
-    - npm install next-auth@beta
-    - npx auth secret
-- cms
-    - Sanity
-        - npm create sanity@latest -- --project d6hl73y8 --dataset production --template clean --typescript --output-path studio-buyme
-            ```shell
-            ? Would you like to add configuration files for a Sanity project in this Next.js folder? Yes
-            ? Do you want to use TypeScript? Yes
-            ? Would you like an embedded Sanity Studio? Yes
-            ? What route do you want to use for the Studio? /studio
-            ? Select project template to use Clean project with no predefined schema types
-            ? Would you like to add the project ID and dataset to your .env.local file? Yes
-            ```
-        - npm install next-sanity@canary
-        - npm install --save sanity-plugin-markdown easymde@2
 
 ## Technologies
 - GUI
@@ -211,6 +188,8 @@ E-Comerce App
 
 ## References
 - [Build Your Own X (insert technology here)](https://build-your-own-x.vercel.app/)
+- Sanity
+    - [Query Language (GROQ)](https://www.sanity.io/docs/groq)
 - Strapi
     - [Getting Started With Next JS 14 and Strapi](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgONvIWsy34aDkAtcdjsQLE)
     - [Strapi & Gatsby Tutorial](https://www.youtube.com/playlist?list=PLVoKTq3-H4pjUy7hfCB0Ei1QBSnevxfhI)
