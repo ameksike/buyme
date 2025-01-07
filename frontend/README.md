@@ -35,6 +35,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
             - npx sanity@latest typegen generate
             - check `frontend\src\sanity\types.ts`
             - npm run typegen
+        - Fetching data 
+            - Client Request model 
+                ```js
+                import { Author, Startup } from "@/sanity/types";
+                import { client } from "@/sanity/lib/client";
+                import { STARTUPS_QUERY } from "@/sanity/lib/queries";
+                export type StartupTypeCard = Omit<Startup, "author"> & { author?: Author };
+                const posts = await client.fetch(STARTUPS_QUERY, params) as Array<StartupTypeCard>;
+                ```
+            - Comet Model
+                ```js
+                import { sanityFetch, SanityLive } from "@/sanity/lib/live";
+                const { data } = await sanityFetch({ query: STARTUPS_QUERY, params });
+                const posts: Array<StartupTypeCard> = data as Array<StartupTypeCard>;
+                ```
+
         - Tools 
             - GET [Structure](http://localhost:3000/studio/structure)
             - GET [Vision](http://localhost:3000/studio/vision)
