@@ -1,12 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Install 
-- terraform
-    - terraform -version
-    - terraform init
-    - terraform plan
-    - terraform apply
-    - terraform destroy
 - next.js
     - npx create-next-app@latest frontend
 - Shadcn UI
@@ -38,7 +32,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
                 `*[_type == "startup"]`
             - Complex query
                 ```js
-                *[_type == "startup" && defined(slug.current)]{
+                *[_type == "startup" && defined(slug.current)] | order(_createdAt desc){
                     _id, 
                     _creatatedAt,
                     title, 
@@ -56,6 +50,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
                     image
                 } 
                 ```
+            - [More query details](./src/sanity/lib/queries.ts)
 
 
 ## Getting Started

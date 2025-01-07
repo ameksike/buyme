@@ -1,23 +1,19 @@
 import { StartupCard } from "@/components/StartupCard";
 import { SearchForm } from "../../components/SearchForm";
+import { STARTUPS_QUERY } from "@/sanity/lib/queries";
+// import { sanityFetch, SanityLive } from "@/sanity/lib/live";
+import { client } from "@/sanity/lib/client";
+
+
 
 interface Props {
   searchParams: Promise<{ query?: string }>
 }
 export default async function Home({ searchParams }: Props) {
   const query = (await searchParams).query;
-  const { data: posts } = {
-    data: [{
-      _createdAt: new Date(),
-      viewa: 55,
-      author: { _id: 1 },
-      _id: 1,
-      description: "This is a description",
-      image: "https://aigeeked.com/wp-content/uploads/2022/12/ai-image-generator.jpg",
-      category: "Robots",
-      title: "we rebots",
-    }]
-  } // await sanityFetch({ query: STARTUPS_QUERY, params });
+  const params = { search: query || null };
+  // const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
+  const posts = await client.fetch(STARTUPS_QUERY, params);
 
   return (
     <>
