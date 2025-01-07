@@ -15,43 +15,57 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - npx auth secret
 - cms
     - Sanity
-        - npm create sanity@latest -- --project d6hl73y8 --dataset production --template clean --typescript --output-path studio-buyme
-            ```shell
-            ? Would you like to add configuration files for a Sanity project in this Next.js folder? Yes
-            ? Do you want to use TypeScript? Yes
-            ? Would you like an embedded Sanity Studio? Yes
-            ? What route do you want to use for the Studio? /studio
-            ? Select project template to use Clean project with no predefined schema types
-            ? Would you like to add the project ID and dataset to your .env.local file? Yes
-            ```
-        - npm install next-sanity@canary
-        - npm install --save sanity-plugin-markdown easymde@2
-        - GET [Structure](http://localhost:3000/studio/structure)
-        - GET [Vision](http://localhost:3000/studio/vision)
-            - Simple query
-                `*[_type == "startup"]`
-            - Complex query
-                ```js
-                *[_type == "startup" && defined(slug.current)] | order(_createdAt desc){
-                    _id, 
-                    _creatatedAt,
-                    title, 
-                    slug, 
-                    author -> {
-                        _id,
-                        name,
-                        slug,
-                        image, 
-                        dio
-                    },
-                    views,
-                    description,
-                    category,
-                    image
-                } 
+        - Installing 
+            - npm create sanity@latest -- --project d6hl73y8 --dataset production --template clean --typescript --output-path studio-buyme
+                ```shell
+                ? Would you like to add configuration files for a Sanity project in this Next.js folder? Yes
+                ? Do you want to use TypeScript? Yes
+                ? Would you like an embedded Sanity Studio? Yes
+                ? What route do you want to use for the Studio? /studio
+                ? Select project template to use Clean project with no predefined schema types
+                ? Would you like to add the project ID and dataset to your .env.local file? Yes
                 ```
-            - [More query details](./src/sanity/lib/queries.ts)
+            - npm install next-sanity@canary
+            - npm install --save sanity-plugin-markdown easymde@2
+            - update `frontend\sanity.config.ts`
+        - Generating types 
+            - npx sanity@latest schema extract --path=./src/sanity/extract.json
+            - check `frontend\src\sanity\extract.json`
+            - create `frontend\sanity-typegen.json`
+            - npx sanity@latest typegen generate
+            - check `frontend\src\sanity\types.ts`
+            - npm run typegen
+        - Tools 
+            - GET [Structure](http://localhost:3000/studio/structure)
+            - GET [Vision](http://localhost:3000/studio/vision)
+                - Simple query
+                    `*[_type == "startup"]`
+                - Complex query
+                    ```js
+                    *[_type == "startup" && defined(slug.current)] | order(_createdAt desc){
+                        _id, 
+                        _creatatedAt,
+                        title, 
+                        slug, 
+                        author -> {
+                            _id,
+                            name,
+                            slug,
+                            image, 
+                            dio
+                        },
+                        views,
+                        description,
+                        category,
+                        image
+                    } 
+                    ```
+                - [More query details](./src/sanity/lib/queries.ts)
 
+
+## References 
+- [Sanity TypeGen](https://www.sanity.io/docs/sanity-typegen)
+- [Generating types from your schema](https://www.sanity.io/learn/course/typescripted-content/generating-types-from-your-schema)
 
 ## Getting Started
 
