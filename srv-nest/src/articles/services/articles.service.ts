@@ -10,8 +10,24 @@ export class ArticlesService {
         return this.prisma.article.create({ data });
     }
 
-    async findAll() {
-        return this.prisma.article.findMany();
+    async findAll(page: number = 1, pageSize: number = 10) {
+        const skip = (page - 1) * pageSize;
+        const take = pageSize;
+
+        const articles = await this.prisma.article.findMany({
+            skip,
+            take,
+        });
+
+        const totalArticles = await this.prisma.article.count();
+
+        return {
+            data: articles,
+            total: totalArticles,
+            page,
+            pageSize,
+            totalPages: Math.ceil(totalArticles / pageSize),
+        };
     }
 
     async findOne(id: number) {
