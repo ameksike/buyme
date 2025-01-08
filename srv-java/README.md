@@ -4,7 +4,11 @@
 - UPDATE `pom.xml`
 - UPDATE `src\main\resources\application.properties`
 - mvn clean install
+- mvn spring-boot:run 
 - http://localhost:8081/graphiql?path=/graphql
+
+
+![screenshot](./docs/screenshot.jpg)
 
 ## Tools 
 - [Spring Initializr](https://start.spring.io/)
