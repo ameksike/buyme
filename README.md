@@ -1,5 +1,5 @@
 # Buyme
-E-Comerce App
+Demo E-Comerce App using Nextjs v15, React v19, etc.
 
 ## Install 
 - terraform

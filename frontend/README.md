@@ -84,6 +84,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## References 
 - [Sanity TypeGen](https://www.sanity.io/docs/sanity-typegen)
 - [Generating types from your schema](https://www.sanity.io/learn/course/typescripted-content/generating-types-from-your-schema)
+- [Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App](https://www.youtube.com/watch?v=Zq5fmkH0T78)
+- [Shadcn/UI: Next.js 15 + React 19](https://ui.shadcn.com/docs/react-19)
+- [Let's build a web app with AI in 191 min (Cursor AI, VS Code, ChatGPT, Firebase)](https://www.youtube.com/watch?v=-tnPCI5RdNA)
 
 ## Getting Started
 
