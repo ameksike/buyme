@@ -36,7 +36,19 @@
 - npm install
 - npm install @prisma/client
 - npm install -D prisma
+
+Database:
 - npx prisma init
+- UPDATE `srv-nest\prisma\schema.prisma`
+- UPDATE `srv-nest\.env`
+- npx prisma migrate dev --name init
+- npx prisma generate
+- nest g module prisma
+- nest g service prisma
+
+
+- npx prisma db pull 
+- nest g res demo/article
 
 
 ## Compile and run the project
