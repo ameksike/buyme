@@ -16,6 +16,7 @@ import static org.mockito.Mockito.when;
 import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 
 public class ArticleServiceTest {
 
@@ -35,6 +36,7 @@ public class ArticleServiceTest {
         article.setTitle("Test Title");
     }
 
+    @DisplayName("Check the method find by id")
     @Test
     void findById() {
         when(articleRepository.findById(1)).thenReturn(Optional.of(article));

@@ -3,8 +3,13 @@
 ## Getting Started
 - UPDATE `pom.xml`
 - UPDATE `src\main\resources\application.properties`
-- mvn clean install
-- mvn spring-boot:run 
+- mvn
+    - mvn clean install
+    - mvn spring-boot:run 
+    - mvn test
+- mvnw
+    - mvnw spring-boot:run
+    - mvnw verify
 - http://localhost:8081/graphiql?path=/graphql
 
 
@@ -20,6 +25,8 @@
 - [Curso Spring Boot #3](https://www.youtube.com/watch?v=YbvZe1wDQqQ&list=PLyvsggKtwbLVOPuOGn9J1Ie9RD7r7LcWD&index=3)
 - [Master Service Discovery in Microservices | Eureka and Java Spring Boot](https://www.youtube.com/watch?v=ecuEkmFs5Vk)
 - [Spring Boot, Spring Security, JWT Course – Shopping Cart Backend Java Project](https://www.youtube.com/watch?v=oGhc5Z-WJSw)
+- [Working with GraphQL Mutations in Spring Boot](https://www.danvega.dev/blog/graphql-mutations)
+    - [Video](https://youtu.be/u3FFRq3-0CM)
 
 ### Documentation
 For further reference, please consider the following sections:

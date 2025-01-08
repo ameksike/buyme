@@ -15,6 +15,11 @@ public class ArticleDto {
     private Integer updatedById;
     private String locale;
 
+    public ArticleDto(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     // Getters and Setters
     public Integer getId() {
         return id;
