@@ -23,6 +23,7 @@ Demo E-Comerce App using Nextjs v15, React v19, etc.
     - [Nextui](https://nextui.org/)
     - [Shadcn](https://ui.shadcn.com/)
     - [Tailwind](https://tailwindcss.com/)
+    - [Stenciljs](https://stenciljs.com/docs/design-systems)
 - ORM
     - [Drizzle](https://orm.drizzle.team/)
     - [Prisma](https://www.prisma.io/pricing)
