@@ -28,6 +28,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
             - npm install next-sanity@canary
             - npm install --save sanity-plugin-markdown easymde@2
             - update `frontend\sanity.config.ts`
+            - npm i markdown-it
+            - npm i --save-dev @types/markdown-it
         - Generating types 
             - npx sanity@latest schema extract --path=./src/sanity/extract.json
             - check `frontend\src\sanity\extract.json`
