@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { workSans } from "./fonts";
 import "easymde/dist/easymde.min.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body
         className={`${workSans.variable} antialiased`}
       >
+        <Analytics/>
         {children}
       </body>
     </html>
