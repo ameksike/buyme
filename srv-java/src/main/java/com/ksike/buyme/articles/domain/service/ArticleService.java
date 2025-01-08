@@ -2,11 +2,13 @@ package com.ksike.buyme.articles.domain.service;
 
 import com.ksike.buyme.articles.application.dto.ArticleDto;
 import com.ksike.buyme.articles.application.mapper.ArticleMapper;
+import com.ksike.buyme.articles.domain.model.Article;
 import com.ksike.buyme.articles.domain.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -14,7 +16,25 @@ public class ArticleService {
 
     @Autowired
     private ArticleRepository articleRepository;
+    
 
+    public List<Article> findAll() {
+        return articleRepository.findAll();
+    }
+
+    public Optional<Article> findById(Integer id) {
+        return articleRepository.findById(id);
+    }
+
+    public Article save(Article article) {
+        return articleRepository.save(article);
+    }
+
+    public void deleteById(Integer id) {
+        articleRepository.deleteById(id);
+    }
+
+    // --------------------------------------------------
     public List<ArticleDto> getAllArticles() {
         return articleRepository.findAll()
                 .stream()
@@ -45,4 +65,5 @@ public class ArticleService {
     public void deleteArticle(Integer id) {
         articleRepository.deleteById(id);
     }
+
 }
