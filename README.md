@@ -1,5 +1,5 @@
 # Buyme
-E-Comerce App
+Demo E-Comerce App using Nextjs v15, React v19, etc.
 
 ## Install 
 - terraform
@@ -8,13 +8,11 @@ E-Comerce App
     - terraform plan
     - terraform apply
     - terraform destroy
-- next.js
-    - npx create-next-app@latest frontend
-- Shadcn UI
-    - npx shadcn@latest init -d
-- auth
-    - npm install next-auth@beta
-    - npx auth secret
+- [Frontend](./frontend/README.md)
+
+## Run 
+- [Vercel Dashboard](https://vercel.com/antonio-membrides-espinosas-projects/buyme)
+- [Web Demo](https://buyme-tau.vercel.app/)
 
 
 ## Technologies
@@ -194,6 +192,8 @@ E-Comerce App
 
 ## References
 - [Build Your Own X (insert technology here)](https://build-your-own-x.vercel.app/)
+- Sanity
+    - [Query Language (GROQ)](https://www.sanity.io/docs/groq)
 - Strapi
     - [Getting Started With Next JS 14 and Strapi](https://www.youtube.com/playlist?list=PL7Q0DQYATmvgONvIWsy34aDkAtcdjsQLE)
     - [Strapi & Gatsby Tutorial](https://www.youtube.com/playlist?list=PLVoKTq3-H4pjUy7hfCB0Ei1QBSnevxfhI)
