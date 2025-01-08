@@ -8,7 +8,11 @@ Demo E-Comerce App using Nextjs v15, React v19, etc.
     - terraform plan
     - terraform apply
     - terraform destroy
-- [frontend](./frontend/README.md)
+- [Frontend](./frontend/README.md)
+
+## Run 
+- [Vercel Dashboard](https://vercel.com/antonio-membrides-espinosas-projects/buyme)
+- [Web Demo](https://buyme-tau.vercel.app/)
 
 
 ## Technologies
