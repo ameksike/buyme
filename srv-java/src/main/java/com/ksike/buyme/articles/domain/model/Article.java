@@ -41,6 +41,14 @@ public class Article {
     @Column(name = "locale", length = 255)
     private String locale;
 
+    public Article() {
+    }
+
+    public Article(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     // Getters y Setters
     @PrePersist
     public void onCreate() {
@@ -140,4 +148,15 @@ public class Article {
     public void setLocale(String value) {
         this.locale = value;
     }
+
+    /*
+     * @Override
+     * public String toString() {
+     * return "Article {" +
+     * "id=" + id +
+     * ", title='" + title + '\'' +
+     * ", description=" + description +
+     * '}';
+     * }
+     */
 }

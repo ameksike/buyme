@@ -5,9 +5,11 @@ type Query {
 }
 
 type Mutation {
+    create(title: String, description: String): Article
+    createItem(input: ArticleInput!): Article
     createArticle(input: ArticleInput): Article
     updateArticle(id: Int!, input: ArticleInput): Article
-    deleteArticle(id: Int!): Boolean
+    deleteArticle(id: Int!): Article
 }
 
 type Article {
@@ -21,7 +23,7 @@ type Article {
     publishedAt: String
     createdById: Int
     updatedById: Int
-    locale: String
+    locale: String 
 }
 
 input ArticleInput {
@@ -34,5 +36,5 @@ input ArticleInput {
     publishedAt: String
     createdById: Int
     updatedById: Int
-    locale: String
+    locale: String  
 }
