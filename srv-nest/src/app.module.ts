@@ -6,9 +6,11 @@ import { ArticlesModule } from './articles/articles.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver } from '@nestjs/apollo';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
+import { AuthModule } from './common/auth/auth.module';
 
 @Module({
   imports: [
+    AuthModule,
     PrismaModule,
     ArticlesModule,
     GraphQLModule.forRoot({

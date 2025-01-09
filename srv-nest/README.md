@@ -49,6 +49,10 @@
   - nest g service prisma
   - npx prisma db pull 
 
+- Middleware 
+  - CREATE `srv-nest\src\common\middleware\logger.middleware.ts`
+  - UPDATE `srv-nest\src\app.module.ts`
+
 - GraphQL
   - npm install @nestjs/graphql graphql apollo-server-express
   - npm install @nestjs/apollo
@@ -103,6 +107,12 @@
     }
     ```
 
+- Auth
+  - npm install @nestjs/passport passport passport-jwt
+  - npm install @nestjs/jwt
+  - npm install bcryptjs  
+  - CREATE `srv-nest\src\common\auth\*`
+  - 
 ## Compile and run the project
 
 ```bash
@@ -173,3 +183,4 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 - [Deploy NestJS on Vercel + PostgreSQL(Supabase) with Prisma](https://www.youtube.com/watch?v=_2w_9V7evUY)
 - [Learn Prisma In 60 Minutes](https://www.youtube.com/watch?v=RebA5J-rlwg&t=155s)
 - [Prisma CRUD](https://www.prisma.io/docs/orm/prisma-client/queries/crud)
+- [Nest.js Authentication](https://docs.nestjs.com/security/authentication)

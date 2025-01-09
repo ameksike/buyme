@@ -1,12 +1,14 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query, Put } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, Put, UseGuards, SetMetadata } from '@nestjs/common';
 import { ArticlesService } from '../services/articles.service';
-import { Prisma } from '@prisma/client';
 import { ArticleInput } from '../models/article.input.dto';
+import { AuthGuard } from '../../common/auth/auth.guard';
 
 @Controller('api/articles')
 export class ArticlesController {
     constructor(private readonly articlesService: ArticlesService) { }
 
+    @SetMetadata('roles', ['admin'])
+    @UseGuards(AuthGuard)
     @Post()
     create(@Body() createArticleDto: ArticleInput) {
         return this.articlesService.create(createArticleDto);
