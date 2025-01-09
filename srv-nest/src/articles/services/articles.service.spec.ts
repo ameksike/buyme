@@ -38,6 +38,7 @@ describe('ArticlesService', () => {
       title: 'Test Article',
       description: 'Test description',
       slug: 'test-article',
+      locale: "",
     };
 
     mockPrismaService.article.create.mockResolvedValue(createArticleDto);

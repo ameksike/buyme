@@ -61,22 +61,44 @@
   - http://localhost:3000/graphql
     ```
     query {
-      getArticles(page: 1, pageSize: 5) {
-        id
-        title
-        description
-        slug
+      getArticles(page: 2, pageSize: 2) {
+          id
+          title
+          description
+          slug
+      }
+      getArticle(id:7) {
+          id
+          title
+          description
+          slug
       }
     }
     mutation {
       updateArticle(id: 5, updateArticleInput: { 
-        title: "Nuevo título", 
-        description: "Descripción actualizada" 
-      }) {
-        id
-        title
-        description
-        slug
+          title: "Nuevo título", 
+          description: "Descripción actualizada" 
+        }) {
+          id
+          title
+          description
+          slug
+      }
+      createArticle(createArticleInput: { 
+            title: "Nuevo título 3", 
+            description: "Descripción actualizada", 
+            slug: "tatatat" 
+        }) {
+            id
+            title
+            description
+            slug
+      }
+      removeArticle(id: 5) {
+          id
+          title
+          description
+          slug
       }
     }
     ```

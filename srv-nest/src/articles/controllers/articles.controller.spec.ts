@@ -38,6 +38,7 @@ describe('ArticlesController', () => {
   it('should create an article', async () => {
     const createArticleDto = {
       title: 'Test Article',
+      locale: "",
       description: 'Test description',
       slug: 'test-article',
     };
@@ -94,7 +95,7 @@ describe('ArticlesController', () => {
     mockArticlesService.update.mockResolvedValue(updatedArticle);
 
     return request(app.getHttpServer())
-      .patch('/api/articles/1')
+      .put('/api/articles/1')
       .send(updateData)
       .expect(200)
       .expect(updatedArticle);
