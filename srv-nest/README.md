@@ -30,26 +30,55 @@
 
 ## Project setup
 
-- npm i -g @nestjs/cli
-- nest new srv-nest
-- cd srv-nest
-- npm install
-- npm install @prisma/client
-- npm install -D prisma
+- Startup
+  - npm i -g @nestjs/cli
+  - nest new srv-nest
+  - cd srv-nest
+  - npm install
+  - npm install @prisma/client
+  - npm install -D prisma
+  - nest g res article
 
-Database:
-- npx prisma init
-- UPDATE `srv-nest\prisma\schema.prisma`
-- UPDATE `srv-nest\.env`
-- npx prisma migrate dev --name init
-- npx prisma generate
-- nest g module prisma
-- nest g service prisma
+- Database:
+  - npx prisma init
+  - UPDATE `srv-nest\prisma\schema.prisma`
+  - UPDATE `srv-nest\.env`
+  - npx prisma migrate dev --name init
+  - npx prisma generate
+  - nest g module prisma
+  - nest g service prisma
+  - npx prisma db pull 
 
-
-- npx prisma db pull 
-- nest g res demo/article
-
+- GraphQL
+  - npm install @nestjs/graphql graphql apollo-server-express
+  - npm install @nestjs/apollo
+  - npm install class-validator
+  - CREATE `srv-nest\src\articles\models\article.dto.ts`
+  - CREATE `srv-nest\src\articles\models\article.input.dto.ts`
+  - CREATE `srv-nest\src\articles\resolvers\articles.resolver.ts`
+  - UPDATE `srv-nest\src\app.module.ts`
+  - UPDATE `srv-nest\src\articles\articles.module.ts`
+    ```
+    query {
+      getArticles(page: 1, pageSize: 5) {
+        id
+        title
+        description
+        slug
+      }
+    }
+    mutation {
+      updateArticle(id: 5, updateArticleInput: { 
+        title: "Nuevo título", 
+        description: "Descripción actualizada" 
+      }) {
+        id
+        title
+        description
+        slug
+      }
+    }
+    ```
 
 ## Compile and run the project
 

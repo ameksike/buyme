@@ -1,13 +1,14 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, Put } from '@nestjs/common';
 import { ArticlesService } from '../services/articles.service';
 import { Prisma } from '@prisma/client';
+import { ArticleInput } from '../models/article.input.dto';
 
 @Controller('api/articles')
 export class ArticlesController {
     constructor(private readonly articlesService: ArticlesService) { }
 
     @Post()
-    create(@Body() createArticleDto: Prisma.ArticleCreateInput) {
+    create(@Body() createArticleDto: ArticleInput) {
         return this.articlesService.create(createArticleDto);
     }
 
@@ -31,8 +32,8 @@ export class ArticlesController {
         return this.articlesService.findOne(+id);
     }
 
-    @Patch(':id')
-    update(@Param('id') id: string, @Body() updateArticleDto: Prisma.ArticleUpdateInput) {
+    @Put(':id')
+    update(@Param('id') id: string, @Body() updateArticleDto: ArticleInput) {
         return this.articlesService.update(+id, updateArticleDto);
     }
 

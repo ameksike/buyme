@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Article {
+  id: Int!
+  title: String!
+  description: String!
+  slug: String!
+  createdAt: String
+  updatedAt: String
+  publishedAt: String
+}
+
+type Query {
+  getArticles(page: Float = 1, pageSize: Float = 10): [Article!]!
+  getArticle(id: Float!): Article!
+}
+
+type Mutation {
+  createArticle(createArticleInput: ArticleInput!): Article!
+  updateArticle(id: Float!, updateArticleInput: ArticleInput!): Article!
+  removeArticle(id: Float!): Article!
+}
+
+input ArticleInput {
+  title: String
+  description: String
+  slug: String
+  locale: String
+}
