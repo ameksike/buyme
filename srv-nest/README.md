@@ -58,6 +58,7 @@
   - CREATE `srv-nest\src\articles\resolvers\articles.resolver.ts`
   - UPDATE `srv-nest\src\app.module.ts`
   - UPDATE `srv-nest\src\articles\articles.module.ts`
+  - http://localhost:3000/graphql
     ```
     query {
       getArticles(page: 1, pageSize: 5) {
