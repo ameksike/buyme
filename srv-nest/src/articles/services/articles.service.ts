@@ -47,7 +47,7 @@ export class ArticlesService {
     async create(articleInput: ArticleInput) {
         return this.prisma.article.create({
             data: {
-                title: articleInput.title,  // Requiere que los campos estén presentes para crear un artículo
+                title: articleInput.title,
                 description: articleInput.description,
                 slug: articleInput.slug,
                 locale: articleInput.locale || '',
@@ -59,11 +59,20 @@ export class ArticlesService {
         return this.prisma.article.update({
             where: { id },
             data: {
-                title: articleInput.title || undefined,  // Permite actualizar sólo los campos proporcionados
+                title: articleInput.title || undefined,
                 description: articleInput.description || undefined,
                 slug: articleInput.slug || undefined,
                 locale: articleInput.locale || undefined,
             },
         });
+    }
+
+    async getArticlesRaw() {
+        const articles = await this.prisma.$queryRaw`
+          SELECT * FROM articles
+          WHERE published_at IS NOT NULL
+          ORDER BY created_at DESC
+        `;
+        return articles;
     }
 }
