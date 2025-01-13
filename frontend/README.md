@@ -9,6 +9,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - npx shadcn@latest init -d
     - npx shadcn@latest add button
     - npx shadcn@latest add skeleton
+    - npx shadcn@latest add input
+    - npx shadcn@latest add textarea 
+    - npx shadcn@latest add toast 
+    - npm i @uiw/react-md-editor
+    - npm i slugify
 
 - auth
     - npm install next-auth@beta
