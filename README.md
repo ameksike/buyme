@@ -219,7 +219,8 @@ Demo E-Comerce App using Nextjs v15, React v19, etc.
     - [Upload Files To CloudFlare R2 using Nextjs](https://www.youtube.com/watch?v=t8b3si507pg)
 - Frontend
     - [Let's build a web app with AI in 191 min (Cursor AI, VS Code, ChatGPT, Firebase)](https://www.youtube.com/watch?v=-tnPCI5RdNA)
-    - [Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App](https://www.youtube.com/watch?v=Zq5fmkH0T78)
+    - [JavaScript Mastery: Next.js 15 Crash Course | Build and Deploy a Production-Ready Full Stack App](https://www.youtube.com/watch?v=Zq5fmkH0T78)
+        - [GitHub Repository](https://github.com/adrianhajdin/yc_directory)
     - [Shadcn/UI: Next.js 15 + React 19](https://ui.shadcn.com/docs/react-19)
 
 - AI 

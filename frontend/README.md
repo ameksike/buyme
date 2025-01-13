@@ -15,6 +15,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - npx auth secret
 - cms
     - Sanity
+        - [Sanity Dashboard](https://www.sanity.io/manage/personal/project/d6hl73y8)
         - Installing 
             - npm create sanity@latest -- --project d6hl73y8 --dataset production --template clean --typescript --output-path studio-buyme
                 ```shell
