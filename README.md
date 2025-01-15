@@ -16,6 +16,8 @@ Demo E-Comerce App using Nextjs v15, React v19, etc.
 
 
 ## Technologies
+- Payment
+    - [Stripe](https://stripe.com/es/pricing)
 - GUI
     - [Preactjs](https://preactjs.com/)
     - [Remix](https://remix.run/)
@@ -193,6 +195,8 @@ Demo E-Comerce App using Nextjs v15, React v19, etc.
 
 ## References
 - [Build Your Own X (insert technology here)](https://build-your-own-x.vercel.app/)
+- Stripe
+    - [How I Stay Sane Implementing Stripe](https://github.com/t3dotgg/stripe-recommendations) 
 - Sanity
     - [Query Language (GROQ)](https://www.sanity.io/docs/groq)
 - Strapi

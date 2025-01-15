@@ -86,6 +86,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
                     ```
                 - [More query details](./src/sanity/lib/queries.ts)
 
+- Sentry
+    - [Dashboard](https://ksike.sentry.io/onboarding/setup-docs/)
+    - npx @sentry/wizard@latest -i nextjs --saas --org ksike --project buyme
+
 
 ## References 
 - [Sanity TypeGen](https://www.sanity.io/docs/sanity-typegen)
